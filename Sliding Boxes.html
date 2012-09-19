@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset = 'UTF-8'>
+	<title> Boxes </title>
+	<link rel='Stylesheet' href= 'css/style.css'>
+	
+	<style>
+	
+	body{
+	
+		font-family: helvetica;
+	}
+	
+	a {
+	
+		margin: 20px;
+		align: centre;
+	
+	}
+	
+		.slide-up-boxes a {
+			display: block;
+			background: #eee;
+			border: 1px solid #ccc;
+			height:  65px;
+			width: 300px;
+			margin 0 0 20px 0;
+			overflow:  hidden;
+			text-decoration: none;
+			color: 3f3f3f;
+			padding-top: none;
+			
+		}
+	
+		.slide-up-boxes h5{
+			height:  65px;
+			text-align: center;
+			line-height: 65px;
+			color: #3f3f3f;
+			
+			-webkit-transition:  margin-top 0.2s linear;
+			
+		}
+		
+		.slide-up-boxes a:hover h5 {
+			margin-top: -65px;
+		}
+		
+		.slide-up-boxes div {
+			height:  45px;
+			padding: 5px;
+			padding-top: 18px;
+			opacity:  0;
+			color: #3f3f3f;
+			font: 12px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+			text-decoration: none;
+			
+			-webkit-transition:  all 0.4s linear;
+			-webkit-transform:  rotate(6deg);
+		}
+		
+		.slide-up-boxes a:hover div {
+			opacity: 1;
+			-webkit-transform:  rotate(0);
+		}
+		
+		.slide-up-boxes a:nth-child(1) div { background: white url(images/BBC2.png) 17px 20px no-repeat; padding-left: 120px;
+		}
+		.slide-up-boxes a:nth-child(2) div { background: #fb2500 url(images/lego.png) 22px 2px no-repeat; padding-left: 120px; 
+		}
+		.slide-up-boxes a:nth-child(3) div { background: white url(images/Yahoo.png) 17px 17px no-repeat; padding-left: 120px; }
+		
+	</style>
+	
+	</head>
+	
+	<body>
+	
+		<div id="page-wrap">
+		
+			<h1 style = "padding-left: 20px"> Boxes.</h1>
+			
+			<section class = "slide-up-boxes">
+			
+				<a href = "http://www.bbc.co.uk">
+				
+				<h5> This is a link to the BBC... </h5>
+				
+				<div> This is a short sentence about the BBC or something i guess.</div>
+				
+				</a>
+				
+				
+				
+					<a href = "http://www.google.com">
+					
+					<h5> This is a link to Lego... </h5>
+					
+					<div> This is a short sentence about Lego or something i guess.</div>
+					
+					</a>
+					
+					
+				
+						<a href = "http://www.yahoo.co.uk">
+						
+						<h5> This is a link to Yahoo... </h5>
+						
+						<div> This is a short sentence about Yahoo or something i guess.</div>
+						
+						</a>
+						
+						
+						
+				
+			</section> 
+			
+		</div>
+		
+	</body>
+	
+</html>
